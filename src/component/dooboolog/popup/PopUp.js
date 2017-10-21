@@ -8,11 +8,6 @@ class PopUp extends Component {
         onClose: func
     };
 
-    componentDidMount() {
-
-
-    }
-
     render () {
         return (
             <div className="popup">
