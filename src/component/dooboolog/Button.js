@@ -1,14 +1,17 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './Button.scss';
 
 class Button extends Component {
     props: {
-        value: string
+        value: string,
+        onClick: func
     };
 
-    render () {
+    render() {
         return (
-            <button className="defaultButton">{this.props.value}</button>
+            <button className="defaultButton" onClick={this.props.onClick}>
+                {this.props.value}
+            </button>
         );
     }
 }

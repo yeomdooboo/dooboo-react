@@ -1,0 +1,47 @@
+$blue: #1ebcc5;
+
+.popup {
+  width: 600px;
+  height: 500px;
+  margin-left: -300px;
+  margin-top: 60px;
+  background-color: aliceblue;
+  position: absolute;
+  left: 50%;
+
+  .closeBtn {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    float: right;
+  }
+  .closeBtn:hover {
+    cursor: pointer;
+  }
+
+  .closeBtn::before {
+    transform: rotate(45deg);
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #000;
+  }
+
+  .closeBtn::after {
+    transform: rotate(-45deg);
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #000;
+  }
+}

@@ -3,11 +3,12 @@
   height: 170px;
   background-color: #61b2a7;
   display: block;
-  h1 {
-    padding-top: 100px;
-    text-align: center;
+  text-align: center;
+  padding-top: 100px;
+  span {
     font-family: sans-serif;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: bold;
     color: aliceblue;
     letter-spacing: 10px;
   }

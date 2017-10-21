@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import PopUpFooter from 'PopUpFooter'
 import './PopUp.scss';
 
 class PopUp extends Component {
     props: {
         children: array,
-        useFooter: boolean
+        useFooter: boolean,
+        onClose: func
     };
 
     componentDidMount() {
@@ -15,16 +15,12 @@ class PopUp extends Component {
 
     render () {
         return (
-            <div>
+            <div className="popup">
+                <span className="closeBtn" onClick={this.props.onClose} />
                 {this.props.children}
-                {this.props.useFooter ?
-                <PopUpFooter/> : null
-                }
             </div>
         );
     }
 }
-
-PopUp.Footer = PopUpFooter;
 
 export default PopUp;
