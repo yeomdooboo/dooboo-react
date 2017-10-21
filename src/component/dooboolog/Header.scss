@@ -1,7 +1,14 @@
-.doobooHeader {
+.header {
   width: 100%;
-  height: 50px;
-  background-color: #AAAAAA;
-  font-family: sans-serif;
-  font-weight: 400;
+  height: 170px;
+  background-color: #61b2a7;
+  display: block;
+  h1 {
+    padding-top: 100px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: aliceblue;
+    letter-spacing: 10px;
+  }
 }

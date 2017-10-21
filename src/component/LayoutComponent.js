@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Header from "./dooboolog/Header";
-import Contents from "./dooboolog/Contents";
+import Body from "./dooboolog/Body";
 
 class LayoutComponent extends Component {
 
@@ -8,7 +8,7 @@ class LayoutComponent extends Component {
         return (
             <div>
                 <Header />
-                <Contents />
+                <Body />
             </div>
         );
     }

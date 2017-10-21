@@ -1,0 +1,17 @@
+.defaultButton {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  background-color: darkcyan;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: aliceblue;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.defaultButton:hover {
+  cursor: pointer;
+  box-shadow: 0  17px 10px -10px
+}
