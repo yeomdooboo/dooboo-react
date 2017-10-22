@@ -3,14 +3,14 @@ import './Button.scss';
 
 class Button extends Component {
     props: {
-        value: string,
+        children: array,
         onClick: func
     };
 
     render() {
         return (
             <button className="defaultButton" onClick={this.props.onClick}>
-                {this.props.value}
+                {this.props.children}
             </button>
         );
     }

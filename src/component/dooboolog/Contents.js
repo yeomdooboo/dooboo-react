@@ -27,7 +27,7 @@ class Contents extends Component {
 
     showPopup() {
         let popup = <Popup onClose={this.closePopup} >
-            <WriteForm/>
+            <WriteForm onClose={this.closePopup}/>
         </Popup>;
         ReactDOM.render(popup, document.getElementById('writePopupWrapper'));
         this.writePopup.style.display = "block";
@@ -38,8 +38,9 @@ class Contents extends Component {
             <div className="content">
                 <div id="bgModal"><div id="writePopupWrapper"/></div>
                 <div className="buttonArea">
-                    <Button onClick={this.handleWriteFormClick.bind(this)}
-                        value="글쓰기"/>
+                    <Button onClick={this.handleWriteFormClick.bind(this)}>
+                        글쓰기
+                    </Button>
                 </div>
                 <div className="contentArea">
                 </div>
